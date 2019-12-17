@@ -21,8 +21,8 @@ public class LoginBookingCom {
         driver.findElement(By.id("profile-menu-trigger--content")).getText();
         Assert.assertEquals("Витек Мандибула", driver.findElement(By.id("profile-menu-trigger--content")).getText());
         driver.findElement(By.id("profile-menu-trigger--content")).click();
-        //driver.findElement(By.cssSelector("form button[type='submit']")).click();
-        //driver.quit();
+        driver.findElement(By.cssSelector("form input[type='submit']")).click();
+        driver.quit();
 
     }
 }
